@@ -34,13 +34,39 @@ Use this to explain:
 - Blade layout composition
 - asset loading
 
-### `resources/js/app.js`
+### `app/Http/Controllers/personal/ExaminationController.php`
 
 Use this to explain:
 
-- Laravel Mix JavaScript entry
-- Vue 2 bootstrap
-- enhancement layer over Blade
+- randomized question selection
+- session-backed answer state
+- score calculation and pass/fail logic
+- best-score update behavior
+
+### `app/Http/Controllers/admin/ResultController.php`
+
+Use this to explain:
+
+- admin result aggregation
+- pass/fail counts
+- max/min/average score reporting
+- DataTables response shape
+
+### `resources/views/personal/exam/exam_testing.blade.php`
+
+Use this to explain:
+
+- exam question navigation
+- selected answer persistence
+- Blade UI connected to Ajax answer updates
+
+### `resources/views/admin/result/result.blade.php`
+
+Use this to explain:
+
+- result dashboard UI
+- summary metrics
+- DataTables-driven analytics table
 
 ### `webpack.mix.js`
 
@@ -68,13 +94,38 @@ Use this to explain:
 - extending a shared Blade layout
 - authenticated dashboard pattern
 
-### `resources/js/app.js`
+### `app/Http/Controllers/DataTableController.php`
 
 Use this to explain:
 
-- JavaScript dependency bootstrap
-- legacy Vue scaffold
-- why unused scaffolding should be removed or ignored in a portfolio story
+- date-filtered admin listings
+- server-side table payloads
+- status mapping and conditional actions
+
+### `app/Http/Controllers/BigStockController.php`
+
+Use this to explain:
+
+- stock lookup flow
+- inventory update workflow
+- stock log creation
+- multi-table consistency concerns
+
+### `resources/views/page_view/admin_user.blade.php`
+
+Use this to explain:
+
+- admin listing page structure
+- DataTables UI
+- modal-driven create/edit/remove flow
+
+### `resources/views/page_view/report.blade.php`
+
+Use this to explain:
+
+- chart-driven reporting screen
+- Ajax calls to reporting endpoints
+- frontend aggregation for visual summaries
 
 ### `webpack.mix.js`
 
